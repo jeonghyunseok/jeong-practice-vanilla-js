@@ -2,7 +2,7 @@ const toDoForm = document.querySelector(".js-toDoForm"),
 toDoInput = toDoForm.querySelector("input"),
 toDoList = document.querySelector(".js-toDoList");
 
-const TODOS_LS = `toDos`;
+const TODOS_LS = "toDos";
 function filterFn(toDo){
     return toDo.id === 1
 }
@@ -28,6 +28,9 @@ function paintToDo(text){
   const delBtn = document.createElement("button");
   const span = document.createElement("span")
   const newId = toDos.length +1;
+  console.log(toDos.length)
+ 
+
   delBtn.innerHTML = "❌";
   delBtn.className = "toDoBtn";
   delBtn.addEventListener("click",deleteToDo);
@@ -42,6 +45,7 @@ function paintToDo(text){
   }
   toDos.push(toDoObj);
   saveToDos();
+
 }
 
 function handleSubmit(event){

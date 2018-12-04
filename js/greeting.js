@@ -21,8 +21,22 @@ function askForName() {
 
 function paintGreeting(text) {
     form.classList.remove(SHOWING_CN);
-    greeting.classList.add(SHOWING_CN);
-    greeting.innerText = `HELLO ${text}`
+    greeting.classList.add(SHOWING_CN); 
+    var time=new Date().getHours()
+    console.log(time)
+    if( 5 <time && time<= 11) {
+        greeting.innerText = "Good Morning, "+text
+    }
+    else if(11<time && time<= 15) {
+        greeting.innerText = "Good Afternoon, "+text
+    }
+    else if(15<time && time <= 19) {
+        greeting.innerText = "Good Evening, "+text
+    }
+    else {
+        greeting.innerText = "Good Night, "+text
+    }
+   
 }
 
 function loadName() {

@@ -1,11 +1,13 @@
 const body  = document.querySelector("body");
 
 
+
+
 //이미지 갯수
 const IMG_NUMBER = 4;
 function paintImage(imgNumber){
     var filter = "win16|win32|win64|mac";
-
+    var imgNumber =imgNumber+1
  //모바일 확인
 
     if(navigator.platform){
@@ -14,17 +16,17 @@ function paintImage(imgNumber){
     
     console.log("Mobile");
     const image = new Image();    
-    image.src =`./images/${imgNumber +1}.jpg`
+    image.src ="./images/"+imgNumber+".jpg"
     image.classList.add("bgImage")
-    body.prepend(image);
+    body.appendChild(image);
     
     }else{
     
     console.log("PC");
     const image = new Image();    
-    image.src =`./images/${imgNumber +1}.jpg`
+    image.src ="./images/"+imgNumber+".jpg"
     image.classList.add("bgImage")
-    body.prepend(image);
+    body.appendChild(image);
     }
     
     }
@@ -43,5 +45,11 @@ function genRandom(){
 function init(){
 const randomNumber = genRandom();
 paintImage(randomNumber);
+
+// 메뉴 아이콘 transiton 
+// var button = document.querySelector('.bt-menu-trigger');
+// button.addEventListener('click', function (){
+//   button.classList.toggle('bt-menu-open');
+// });
 }
 init();
