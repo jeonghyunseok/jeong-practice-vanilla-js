@@ -1,0 +1,28 @@
+{
+  "name": "vanilla",
+  "version": "1.0.0",
+  "description": "Vanilla JS Study\r A clone of the productivity chrome app Momentum on Vanilla JS\r youtube nomad coder\r 시계, 지역날씨, 할일 목록, 그림 변경.\r Vanilla JS, HTML, CSS",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "geolocation": "^0.2.0",
+    "nodemon": "^1.18.7",
+    "path": "^0.12.7",
+    "webpack": "^4.27.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeonghyunseok/vanillaJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeonghyunseok/vanillaJS/issues"
+  },
+  "homepage": "https://github.com/jeonghyunseok/vanillaJS#readme"
+}
