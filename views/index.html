@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
     <title>Schedule Note</title>
@@ -11,9 +12,9 @@
     
     <link rel="shortcut icon" href="images/favicon.ico" />
     <!-- *********************
-     bootscrap(jeong)
-    date:2018-12-04 
-    *********************-->
+         bootstrap(jeong)
+         date:2018-12-04 
+        *********************-->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -29,13 +30,12 @@
 
 <body class="body">
     <!-- 사이드 네비바 부트스트랩 -->
-
     <div id="mySidenav" class="sidenav">
         <div class="mySidenavLovo"></div>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <span class="navMenuSpan" onclick="todo()">TodoList</span>
-        <span class="navMenuSpan">Portfolio</span>
-        <span class="navMenuSpan">Contact</span>
+        <span class="navMenuSpan" onclick="goPortfolio()">Portfolio</span>
+        <span class="navMenuSpan" onclick="goContact()">Contact</span>
     </div>
     <!-- 네비바 클릭시 전체 화면 이동 -->
     <div id="main"></div>
@@ -101,7 +101,6 @@
     <span id="todo-title" class="todo-title linear-wipe" fill="url('#logo-gradient')" transform="translate(0.000000,310.000000) scale(0.100000,-0.100000)"
         fill="#000000" stroke="none">
         Schedule Note</span>
-
     </div>
     <section id="center" class="center">
         <div class="js-clock clock">
@@ -211,6 +210,15 @@
             $(".weather").css('display', 'none');
             closeNav();
         }
+
+         //GO PORTFOLIO
+    function goPortfolio(){
+      window.open('http://whaleteacher.com/','_blank');
+    }
+          //GO CONTACT
+          function goContact(){
+      window.open('http://whaleteacher.com/#contact','_blank');
+    }
     </script>
   <script  type="text/javascript" src="js/bg.js"></script>
   <script  type="text/javascript" src="js/clock.js"></script>
