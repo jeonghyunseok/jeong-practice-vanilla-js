@@ -1,4 +1,5 @@
-📒 #연습용 바닐라 js 코딩
+## 📒 연습용 바닐라 js 코딩
+
 Vanilla JS Study
 A clone of the productivity chrome app Momentum on Vanilla JS
 youtube nomad coder
